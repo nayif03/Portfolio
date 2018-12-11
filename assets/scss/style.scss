@@ -1,0 +1,204 @@
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+//  Home style
+
+
+.overflow-text{
+    top: 1rem;
+}
+
+.home-header{
+    height: 10em;
+}
+
+.video-home{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph{
+    margin-top: 2em;
+}
+@keyframes page{
+    0%{
+        transform: translate(0px,-100%);
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translate(0px,0px);
+        opacity: 0.8;
+    }
+}
+
+.main{
+    bottom: 0;
+}
+
+// my Home style
+ 
+
+ .home{
+     background-image: url(../images/himesh-kumar-behera-216019-unsplash.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+ }
+ .heading{
+    padding-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .bg-video{
+     box-shadow: -1px 62px 132px 5px black;
+ }
+ .head{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-size: xx-large;
+     color: white;
+     font-family: 'Oswald', sans-serif;
+    animation: head ease 7s ;
+    opacity: 0;   
+ }
+ @keyframes head{
+     50%{
+         opacity: 0.8;
+         transform: scale(1.5);
+     }
+ }
+ a{
+     color: white;
+     outline: none;
+     text-decoration: none;
+     font-family: 'Open Sans', sans-serif;
+ }
+ a:hover{
+     outline: none;
+     text-decoration: none;
+     color:black; 
+     
+ } 
+ 
+ .blog{
+     font-family: 'Roboto Condensed', sans-serif;
+     color: white;
+     text-shadow: 1px 1px 1px rgb(12, 12, 12);
+     opacity: 0.9;
+     padding: 4em;
+     margin-bottom: 10em;
+}
+ .blog div{
+     flex: 1;
+     padding: 1em;
+ }
+ .image{
+     width: 100%;
+     border-style: hidden;
+
+    
+ }
+ .image:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: -5px 14px 195px 5px rgba(0,0,0,0.75);
+ }
+.card-body {
+    background: linear-gradient(rgba(214, 216, 218, 0.616),rgba(163, 165, 162, 0.562));
+}
+
+.gallery{
+    margin-bottom: 10em;
+    opacity: 0.9;
+}
+.gallery-header{
+    margin-bottom: 4em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width:578px){
+    .card-img-overlay{
+        position: relative;
+    }
+    .carousel-control-prev,
+    .carousel-control-next{
+        display: none;
+    }
+    *{
+        font-size: 1rem;
+    }
+}
+
+
+// portfolio style
+
+.main-folio{
+    background: white;
+    -webkit-box-shadow: -1px 50px 32px 200px white;
+    -moz-box-shadow: -1px 50px 32px 200px white;
+    box-shadow: -1px 50px 32px 200px white;
+}
+.sticky-top{
+    position: sticky;
+    top: 0;
+}
+ul.folio > li.nav-item a.nav-link:active,
+ul.folio > li.nav-item a.nav-link:hover,
+ul.folio > li.nav-item a.nav-link:focus
+{
+  border-bottom:$primary;
+    background: $primary;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+.carousel-bg-img{
+    background-image: url(../images/patrick-tomasso-151382-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-about-color{
+    background: linear-gradient(rgba(159, 247, 159, 0.568),rgba(217, 219, 97, 0.466));
+    font-family: 'Patua One', cursive;
+}  
+
+.radius-bottom-info{
+     border-bottom: 30px solid $info;
+}
+
+.heading-resume{
+    background: $dark;
+    color:$light;
+    border-right: 10px solid $info;
+    border-top-right-radius: 300px; 
+    width: 75%;
+    border-top-left-radius: 50px;
+    padding-left: 1em;
+}
+
+.progress{
+    background: rgba(128, 128, 128, 0.356);
+}
