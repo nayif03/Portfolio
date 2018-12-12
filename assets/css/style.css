@@ -6327,6 +6327,25 @@ a.text-dark:hover, a.text-dark:focus {
   min-width: 100%;
   min-height: 100%; }
 
+.swing-anim {
+  animation: swing linear 5s;
+  animation-iteration-count: 2;
+  transform-origin: 50% 0%; }
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(15deg); }
+  40% {
+    transform: rotate(-10deg); }
+  60% {
+    transform: rotate(5deg); }
+  80% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(0deg); } }
+
 .page {
   display: flex;
   flex-direction: column;
@@ -6436,15 +6455,30 @@ a:hover {
   * {
     font-size: 1rem; } }
 
-.main-folio {
-  background: white;
-  -webkit-box-shadow: -1px 50px 32px 200px white;
-  -moz-box-shadow: -1px 50px 32px 200px white;
-  box-shadow: -1px 50px 32px 200px white; }
+.focus-animation {
+  animation: focus linear 4s;
+  animation-iteration-count: 2;
+  transform-origin: 50% 50%; }
 
-.sticky-top {
-  position: sticky;
-  top: 0; }
+@keyframes focus {
+  0% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1); }
+  25% {
+    opacity: 1;
+    transform: scaleX(0.95) scaleY(0.95); }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.1) scaleY(1.1); }
+  100% {
+    opacity: 0;
+    transform: scaleX(0.3) scaleY(0.3); } }
+
+.main-folio {
+  background: linear-gradient(rgba(159, 219, 247, 0.568), rgba(109, 97, 219, 0.466));
+  -webkit-box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
+  -moz-box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
+  box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568); }
 
 ul.folio > li.nav-item a.nav-link:active,
 ul.folio > li.nav-item a.nav-link:hover,
@@ -6461,11 +6495,14 @@ ul.folio > li.nav-item a.nav-link:focus {
   background-attachment: fixed; }
 
 .bg-about-color {
-  background: linear-gradient(rgba(159, 247, 159, 0.568), rgba(217, 219, 97, 0.466));
+  background: rgba(255, 255, 255, 0.637);
   font-family: 'Patua One', cursive; }
 
 .radius-bottom-info {
   border-bottom: 30px solid #17a2b8; }
+
+#resume {
+  text-shadow: 1px 1px 1px black; }
 
 .heading-resume {
   background: #343a40;
@@ -6474,7 +6511,80 @@ ul.folio > li.nav-item a.nav-link:focus {
   border-top-right-radius: 300px;
   width: 75%;
   border-top-left-radius: 50px;
-  padding-left: 1em; }
+  padding-left: 1em;
+  width: 100%;
+  animation: animationFrames ease-out 5s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  animation-delay: 4s; }
 
 .progress {
   background: rgba(128, 128, 128, 0.356); }
+
+@keyframes animationFrames {
+  0% {
+    opacity: 0;
+    transform: translate(300px, 0px) skewX(-30deg); }
+  60% {
+    opacity: 1;
+    transform: translate(-40px, 0px) skewX(30deg); }
+  80% {
+    opacity: 1;
+    transform: translate(0px, 0px) skewX(-15deg); }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px) skewX(0deg); } }
+
+.head-animation {
+  animation: anim ease 4s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards; }
+
+.has-animation {
+  animation: anim ease 4s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-delay: 7s;
+  animation-fill-mode: forwards; }
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -25px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px); } }
+
+.text-animation {
+  animation: text linear 4s infinite;
+  transform-origin: 50% 50%;
+  animation-delay: 10s;
+  animation-fill-mode: forwards; }
+
+@keyframes text {
+  0% {
+    transform: rotate(0deg) scaleX(1) scaleY(1); }
+  10% {
+    transform: rotate(-3deg) scaleX(0.8) scaleY(0.8); }
+  20% {
+    transform: rotate(-3deg) scaleX(0.8) scaleY(0.8); }
+  30% {
+    transform: rotate(3deg) scaleX(1.2) scaleY(1.2); }
+  40% {
+    transform: rotate(-3deg) scaleX(1.2) scaleY(1.2); }
+  50% {
+    transform: rotate(3deg) scaleX(1.2) scaleY(1.2);
+    text-shadow: 5px 5px 5px #17a2b8; }
+  60% {
+    transform: rotate(-3deg) scaleX(1.2) scaleY(1.2);
+    text-shadow: 5px 5px 5px #17a2b8; }
+  70% {
+    transform: rotate(3deg) scaleX(1.2) scaleY(1.2); }
+  80% {
+    transform: rotate(-3deg) scaleX(1.2) scaleY(1.2); }
+  90% {
+    transform: rotate(3deg) scaleX(1.2) scaleY(1.2); }
+  100% {
+    transform: rotate(0deg) scaleX(1.2) scaleY(1.2); } }
