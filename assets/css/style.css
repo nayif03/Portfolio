@@ -6455,6 +6455,10 @@ a:hover {
   * {
     font-size: 1rem; } }
 
+body {
+  max-width: 1300px;
+  margin: auto; }
+
 .focus-animation {
   animation: focus linear 4s;
   animation-iteration-count: 2;
