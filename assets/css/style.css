@@ -6478,12 +6478,6 @@ body {
     opacity: 0;
     transform: scaleX(0.3) scaleY(0.3); } }
 
-.main-folio {
-  background: linear-gradient(rgba(159, 219, 247, 0.568), rgba(109, 97, 219, 0.466));
-  -webkit-box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
-  -moz-box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
-  box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568); }
-
 ul.folio > li.nav-item a.nav-link:active,
 ul.folio > li.nav-item a.nav-link:hover,
 ul.folio > li.nav-item a.nav-link:focus {
@@ -6493,14 +6487,10 @@ ul.folio > li.nav-item a.nav-link:focus {
   border-radius: 0;
   transition: background 0.20s linear; }
 
-.carousel-bg-img {
-  background-image: url(../images/patrick-tomasso-151382-unsplash.jpg);
-  background-size: cover;
-  background-attachment: fixed; }
-
 .bg-about-color {
-  background: rgba(255, 255, 255, 0.637);
-  font-family: 'Patua One', cursive; }
+  background: white;
+  font-family: 'Patua One', cursive;
+  margin: 10em 0; }
 
 .radius-bottom-info {
   border-bottom: 30px solid #17a2b8; }

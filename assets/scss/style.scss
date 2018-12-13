@@ -205,12 +205,12 @@ body{
     }
 }
 
-.main-folio{
-    background: linear-gradient(rgba(159, 219, 247, 0.568),rgba(109, 97, 219, 0.466));
-    -webkit-box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
-    -moz-box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
-    box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
-}
+// .main-folio{
+//     background: linear-gradient(rgba(159, 219, 247, 0.568),rgba(109, 97, 219, 0.466));
+//     -webkit-box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
+//     -moz-box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
+//     box-shadow: -1px 50px 32px 200px rgba(159, 219, 247, 0.568);
+// }
 
 ul.folio > li.nav-item a.nav-link:active,
 ul.folio > li.nav-item a.nav-link:hover,
@@ -223,14 +223,15 @@ ul.folio > li.nav-item a.nav-link:focus
     transition:background 0.20s linear;
 }
 .carousel-bg-img{
-    background-image: url(../images/patrick-tomasso-151382-unsplash.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    // background-image: url(../images/patrick-tomasso-151382-unsplash.jpg);
+    // background-size: cover;
+    // background-attachment: fixed;
     
 }
 .bg-about-color{
-    background: rgba(255, 255, 255, 0.637);
+    background: rgb(255, 255, 255);
     font-family: 'Patua One', cursive;
+    margin: 10em 0;
 }  
 
 .radius-bottom-info{
